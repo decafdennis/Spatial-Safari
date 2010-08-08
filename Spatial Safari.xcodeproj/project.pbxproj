@@ -12,6 +12,7 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		954F2DAC120F34E1002E716A /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954F2DAB120F34E1002E716A /* ScriptingBridge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Spatial Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spatial Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		954F2DAB120F34E1002E716A /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		954F2E79120F3A5F002E716A /* SPSSafari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPSSafari.h; path = "/Users/dennis/Desktop/Spatial Safari/Sources/SPSSafari.h"; sourceTree = "<absolute>"; };
+		954F2E7A120F3A5F002E716A /* SPSSystemEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPSSystemEvents.h; path = "/Users/dennis/Desktop/Spatial Safari/Sources/SPSSystemEvents.h"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				954F2DAC120F34E1002E716A /* ScriptingBridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				954F2D6A120F30AE002E716A /* Controller */,
+				954F2E77120F3A00002E716A /* Scripting Bridge */,
 				29B97315FDCFA39411CA2CEA /* Other */,
 			);
 			path = Sources;
@@ -88,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				954F2DAB120F34E1002E716A /* ScriptingBridge.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,6 +123,15 @@
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 			);
 			name = Other;
+			sourceTree = "<group>";
+		};
+		954F2E77120F3A00002E716A /* Scripting Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				954F2E79120F3A5F002E716A /* SPSSafari.h */,
+				954F2E7A120F3A5F002E716A /* SPSSystemEvents.h */,
+			);
+			name = "Scripting Bridge";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
