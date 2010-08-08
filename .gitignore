@@ -1,0 +1,4 @@
+.DS_Store
+build/
+Spatial Safari.xcodeproj/*.pbxuser
+Spatial Safari.xcodeproj/*.perspectivev3
